@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Writer Notes | Atherium Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="nav"></div>
+  <h1>Writer Notes</h1>
+  <p>This section is for meta-thinking: reflections, behind-the-scenes insights, philosophical sparks, and design rules that guide the Atherium world. A forge of thoughts.</p>
 
+  <h2>Forge Sparks</h2>
+  <textarea placeholder="Write anything—raw emotions, structural ideas, or future goals..."></textarea>
+
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("nav").innerHTML = data);
+  </script>
+</body>
+</html>

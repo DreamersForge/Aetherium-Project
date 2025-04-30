@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Factions | Atherium Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="nav"></div>
+  <h1>Factions of Atherium</h1>
+  <p>This page explores the major factions—human empires, demonic manipulators, forgotten gods, and interdimensional forces—that shape the politics and wars of the Atherium universe.</p>
 
+  <h2>Faction Ideas & Notes</h2>
+  <textarea placeholder="Describe alliances, internal conflicts, power struggles, or hidden factions..."></textarea>
+
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("nav").innerHTML = data);
+  </script>
+</body>
+</html>

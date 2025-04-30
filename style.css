@@ -1,0 +1,95 @@
+/* ===== Aetherium Universal Stylesheet ===== */
+
+/* === Typography === */
+body {
+  font-family: 'Merriweather', serif;
+  color: #e0e0e0;
+  background-color: #0b0c10;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+  color: #ffd700;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* === Layout === */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  background-color: #1a1a2e;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
+  padding: 1.5rem;
+}
+
+/* === Links and Buttons === */
+a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffd700;
+}
+
+button {
+  background-color: #00bcd4;
+  color: #0b0c10;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ffd700;
+  transform: scale(1.05);
+}
+
+/* === Effects === */
+.glow-text {
+  color: #00bcd4;
+  text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ===== Fonts (for external use) =====
+Include in HTML:
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Merriweather&display=swap" rel="stylesheet">
+*/

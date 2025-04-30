@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Main Characters | Atherium Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="nav"></div>
+  <h1>Main Characters</h1>
+  <p>This page focuses on the key figures of the story—the emotionally complex protagonists, mysterious guides, and ideological opponents that define the human journey in Atherium.</p>
 
+  <h2>Character Concepts & Growth</h2>
+  <textarea placeholder="Write character arcs, moral dilemmas, or psychological traits..."></textarea>
+
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("nav").innerHTML = data);
+  </script>
+</body>
+</html>

@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Worldbuilding | Atherium Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="nav"></div>
+  <h1>Worldbuilding</h1>
+  <p>Here we explore the geography, cosmology, dimensional structure, and technological evolution of the Atherium universe. From smith-worlds to shattered spires, every place has meaning.</p>
 
+  <h2>Structure & Cosmology</h2>
+  <textarea placeholder="Add terrain maps, city layouts, interdimensional gates, etc..."></textarea>
+
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("nav").innerHTML = data);
+  </script>
+</body>
+</html>

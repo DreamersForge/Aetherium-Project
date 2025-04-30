@@ -111,6 +111,28 @@ button:hover {
 .navbar li a:hover {
   color: #00ffd5;
 }
+canvas.universe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #0d0d1a;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#nav, h1, p, textarea {
+  position: relative;
+  z-index: 1;
+}
 /* ===== Fonts (for external use) =====
 Include in HTML:
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Merriweather&display=swap" rel="stylesheet">
